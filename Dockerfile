@@ -1,7 +1,7 @@
 FROM redis:3.2
 
-RUN mkdir /etc/twinepm-server-heroku/
+RUN mkdir /etc/twine-package-manager/memorydb/
 
-WORKDIR /etc/twinepm-server-heroku/
+WORKDIR /etc/twine-package-manager/memorydb/
 
-COPY memorydb/ ./memorydb/
+COPY . .
